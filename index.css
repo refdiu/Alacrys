@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100dvh;
+    /* overflow-y: scroll; */
 }
 
 #heading{
@@ -27,7 +28,7 @@ body {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
 }
 
-#quote{
+.quote{
     display: flex;
     font-family: Arial;
     color: darkgoldenrod;
@@ -39,6 +40,20 @@ body {
     font-size: x-large;
     font-style: italic;
     padding-top: 10dvh; 
+}
+
+.para{
+    display: flex;
+    font-family: Arial;
+    color: darkgoldenrod;
+    /* border: 2px solid rgb(184, 110, 0); */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    padding: 10dvh; 
 }
 
 #topbar {
@@ -63,7 +78,7 @@ body {
 }
 
 #topbar.open {
-    transform: translateY(0);
+    transform: translateY(+10%);
 }
 
 #dropdown {
@@ -79,6 +94,7 @@ body {
     cursor: pointer;
 }
 
+
 .tb_buttons {
     border: none;
     padding: 5px;
@@ -86,6 +102,7 @@ body {
     max-height: fit-content;
     max-width: fit-content;
     font-family: mpfont;
+    background-color: none;
     margin: 5px;
     font-size: 400%;
 }
