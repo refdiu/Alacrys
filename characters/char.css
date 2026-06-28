@@ -1,0 +1,23 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.chargrid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    border: 5px solid darkgoldenrod;
+    max-width: 100dvw;
+    height: 500dvh;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.chargrid div{
+    border: 2px solid white;
+    height: 60svh;
+    /* padding: 30px; */
+    margin: 0.5dvh;
+    background-color: darkolivegreen;
+}

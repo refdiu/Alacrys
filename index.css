@@ -102,7 +102,13 @@ body {
     max-height: fit-content;
     max-width: fit-content;
     font-family: mpfont;
-    background-color: none;
+    /* background-color: none; */
     margin: 5px;
     font-size: 400%;
+}
+
+.charbutt, a:link, a:visited {
+    text-decoration: none!important;
+    cursor: pointer;
+    color: darkgoldenrod
 }
