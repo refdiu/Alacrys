@@ -1,23 +1,57 @@
+@font-face {
+    font-family: mpfont;
+    src: url("Lumiare.otf");
+}
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+#bar{
+    display: flex;
+    flex-direction: column;
+    min-height: 30dvh;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: mpfont;
+    color: darkgoldenrod;
+    font-size: 900%;
+    align-items: center;
+    justify-content: center;
+}
+
 .chargrid{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    border: 5px solid darkgoldenrod;
+    gap: 4dvw;
+    grid-template-columns: repeat(auto-fit, minmax(min(12.5rem, 100%), 1fr));
+    /* border: 5px solid darkgoldenrod; */
     max-width: 100dvw;
-    height: 500dvh;
+    height: fit-content;
     justify-content: center;
     overflow-x: hidden;
+    align-items: center;
+    padding-top: 10dvw;
+    padding-left: 10dvw;
+    padding-right: 10dvw;
+    padding-bottom: 5dvh;
 }
 
 .chargrid div{
-    border: 2px solid white;
-    height: 60svh;
-    /* padding: 30px; */
-    margin: 0.5dvh;
-    background-color: darkolivegreen;
+    /* border: 2px solid white; */
+    width: 240px;
+    height: 400px;
+    max-height: 400px;
+    max-width: 240px;
+    background-color: black;
+    box-shadow: 0px 0 90px white;
+    display: flex;
+    color: darkgoldenrod;
+    flex-direction: column;
+    font-family: mpfont;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: x-large;
+    gap: 30px;
 }
