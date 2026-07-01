@@ -7,13 +7,74 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-image: url("download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    width: 100dvw;
+    background-color: none;
+
+ /* Slide setup */
+    transform: translateY(-58%);
+    transition: transform 0.5s ease;
+}
+
+#topbar.open {
+    transform: translateY(0%);
+}
+
+#dropdown {
+    display: flex;
+    /* border: 2px solid rgb(184, 110, 0); */
+    min-width: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+    /* color: darkgoldenrod; */
+    max-width: 100%;
+    /* position: sticky; */
+    cursor: pointer;
+}
+
+
+.tb_buttons {
+    border: none;
+    padding: 5px;
+    color: darkgoldenrod;
+    max-height: fit-content;
+    max-width: fit-content;
+    font-family: mpfont;
+    /* background-color: none; */
+    margin: 5px;
+    font-size: 400%;
+}
+
+.charbutt, a:link, a:visited {
+    text-decoration: none!important;
+    cursor: pointer;
+    color: darkgoldenrod
 }
 
 #bar{
     display: flex;
     flex-direction: column;
     min-height: 30dvh;
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
     padding-top: 10%;
     font-family: mpfont;
     color: darkgoldenrod;
@@ -45,7 +106,7 @@ body{
     max-height: 400px;
     max-width: 240px;
     background-color: black;
-    box-shadow: 0px 0 90px white;
+    box-shadow: 0px 0 50px darkgoldenrod;
     display: flex;
     color: darkgoldenrod;
     flex-direction: column;
@@ -54,4 +115,12 @@ body{
     text-transform: capitalize;
     font-size: x-large;
     gap: 30px;
+    padding: 5px;
+    /* margin-top: 50px; */
+}
+
+img{
+    object-fit: cover;
+    min-height: 75%;
+    max-height: 75%;
 }
