@@ -86,7 +86,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    /* gap: 10px; */
+    gap: 20px;
     text-align: center;
     font-family: mpfont;
 }

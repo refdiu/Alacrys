@@ -3,13 +3,28 @@
     src: url("Lumiare.otf");
 }
 
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
     background-image: url("roses.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    /* overflow-y: hidden; */
+}
+
+img{
+    max-width: 70%;
+    width: 70%;
+    height: auto;
+}
+
+#map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10dvw;
 }
 
 #topbar {
@@ -25,7 +40,7 @@ body{
     left: 0;
     z-index: 10;
     position: fixed;
-    width: 100dvw;
+    width: 100%;
     background-color: none;
 
  /* Slide setup */
@@ -34,7 +49,7 @@ body{
 }
 
 #topbar.open {
-    transform: translateY(0%);
+    transform: translateY(+10%);
 }
 
 #dropdown {
@@ -45,7 +60,6 @@ body{
     justify-content: center;
     align-content: center;
     overflow-x: hidden;
-    /* color: darkgoldenrod; */
     max-width: 100%;
     /* position: sticky; */
     cursor: pointer;
@@ -83,44 +97,14 @@ body{
     justify-content: center;
 }
 
-.chargrid{
-    display: grid;
-    gap: 4dvw;
-    grid-template-columns: repeat(auto-fit, minmax(min(12.5rem, 100%), 1fr));
-    /* border: 5px solid darkgoldenrod; */
-    max-width: 100dvw;
-    height: fit-content;
-    justify-content: center;
-    overflow-x: hidden;
-    align-items: center;
-    padding-top: 10dvw;
-    padding-left: 10dvw;
-    padding-right: 10dvw;
-    padding-bottom: 5dvh;
-}
-
-.chargrid div{
-    /* border: 2px solid white; */
-    width: 240px;
-    height: 400px;
-    max-height: 400px;
-    max-width: 240px;
-    background-color: black;
-    box-shadow: 0px 0 50px darkgoldenrod;
-    display: flex;
+.desc{
     color: darkgoldenrod;
-    flex-direction: column;
-    font-family: mpfont;
-    text-align: center;
-    /* text-transform: capitalize; */
-    font-size: x-large;
-    gap: 30px;
-    padding: 5px;
-    /* margin-top: 50px; */
-}
-
-img{
-    object-fit: cover;
-    min-height: 75%;
-    max-height: 75%;
+    word-spacing: 5px;
+    word-break: keep-all;
+    font-family: Helvetica;
+    padding: 0 10dvw;
+    padding-bottom: 10dvh;
+    font-size: xx-large;
+    text-align: justify;
+    overflow: hidden;
 }
