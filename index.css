@@ -68,14 +68,13 @@ body {
 
 .pics{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(21rem, 100%), 1fr));
     color: darkgoldenrod;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 5%;
-    /* overflow-x: hidden; */
-    max-width: 100dvw;
+    gap: 100px;
+    padding: 10%;
+    max-width: 100%;
     background: rgba(0, 0, 0, 0.421);
     max-height: 30%;
 }
@@ -87,19 +86,17 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    /* overflow: hidden; */
-    gap: 10px;
-    /* max-width: 30dvh; */
+    /* gap: 10px; */
     text-align: center;
     font-family: mpfont;
 }
 
 .pics img {
     max-width: 100%;
-    width: 100%;
+    width: 75%;
     height: auto;
     display: block;
-    border-radius: 8px; /* optional, looks nice */
+     
 }
 
 #topbar {
@@ -115,7 +112,7 @@ body {
     left: 0;
     z-index: 10;
     position: fixed;
-    width: 100dvw;
+    width: 100%;
     background-color: none;
 
  /* Slide setup */
