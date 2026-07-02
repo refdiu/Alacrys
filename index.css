@@ -4,14 +4,14 @@
 }
 
 body {
-    /* background-image: url("backpic.jpg");
+    background-image: url("roses.jpg");
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100dvh;
-    /* overflow-y: scroll; */
+    min-height: 100dvh;
+    /* overflow-y: hidden; */
 }
 
 #heading{
@@ -26,6 +26,17 @@ body {
     overflow-x: hidden;
     width: 100%;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+
+.smallhead{
+    display: flex;
+    font-family: mpfont;
+    color: darkgoldenrod;
+    padding: 10dvh;
+    font-size: 600%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .quote{
@@ -46,7 +57,6 @@ body {
     display: flex;
     font-family: Arial;
     color: darkgoldenrod;
-    /* border: 2px solid rgb(184, 110, 0); */
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -54,6 +64,35 @@ body {
     font-size: x-large;
     font-style: italic;
     padding: 10dvh; 
+}
+
+.pics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    color: darkgoldenrod;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    padding: 20dvh;
+    overflow-x: hidden;
+    /* max-width: 100dvw; */
+    background: rgba(0, 0, 0, 0.421);
+    max-height: fit-content;
+}
+
+.pics div{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    padding: 10dvh;
+
+    overflow: hidden;
+    gap: 40px;
+    /* max-width: 30dvh; */
+    text-align: center;
+    font-family: mpfont;
 }
 
 #topbar {
