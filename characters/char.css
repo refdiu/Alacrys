@@ -7,9 +7,22 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url("roses.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100dvh;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+#cbg{
+    z-index: -20;
+    opacity: 40%;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: fixed;
+    background-position: bottom;
 }
 
 #topbar {
@@ -31,6 +44,10 @@ body{
  /* Slide setup */
     transform: translateY(-58%);
     transition: transform 0.5s ease;
+}
+
+#topbar div{
+    gap: 6dvw;
 }
 
 #topbar.open {
@@ -55,7 +72,7 @@ body{
 .tb_buttons {
     border: none;
     padding: 5px;
-    color: darkgoldenrod;
+    color: rgb(189, 158, 97);
     max-height: fit-content;
     max-width: fit-content;
     font-family: mpfont;
@@ -67,7 +84,7 @@ body{
 .charbutt, a:link, a:visited {
     text-decoration: none!important;
     cursor: pointer;
-    color: darkgoldenrod
+    color: rgb(189, 158, 97);
 }
 
 #bar{
@@ -77,7 +94,7 @@ body{
     /* padding-bottom: 10%; */
     padding-top: 10%;
     font-family: mpfont;
-    color: darkgoldenrod;
+    color: rgb(189, 158, 97);
     font-size: 900%;
     align-items: center;
     justify-content: center;
@@ -106,9 +123,9 @@ body{
     max-height: 400px;
     max-width: 240px;
     background-color: black;
-    box-shadow: 0px 0 50px darkgoldenrod;
+    box-shadow: 0px 0 50px rgb(189, 158, 97);
     display: flex;
-    color: darkgoldenrod;
+    color: rgb(166, 139, 86);
     flex-direction: column;
     font-family: mpfont;
     text-align: center;
@@ -119,7 +136,7 @@ body{
     /* margin-top: 50px; */
 }
 
-img{
+.chargrid img{
     object-fit: cover;
     min-height: 75%;
     max-height: 75%;

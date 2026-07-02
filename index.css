@@ -3,15 +3,28 @@
     src: url("Lumiare.otf");
 }
 
+* {
+    color: rgb(189, 158, 97);
+}
+
 body {
-    background-image: url("roses.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     min-height: 100dvh;
     /* overflow-y: hidden; */
+    background-color: black;
+}
+
+#citybg{
+    z-index: -20;
+    opacity: 60%;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    position:fixed;
 }
 
 #heading{
@@ -25,18 +38,20 @@ body {
     padding-bottom: 6dvh;
     overflow-x: hidden;
     width: 100%;
+    background: rgba(0, 0, 0, 0.421);
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
 }
 
 .smallhead{
     display: flex;
     font-family: mpfont;
-    color: darkgoldenrod;
+    /* color: darkgoldenrod; */
     padding: 10dvh;
     font-size: 600%;
     text-align: center;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.421);   
 }
 
 .quote{
@@ -50,7 +65,8 @@ body {
     text-align: center;
     font-size: x-large;
     font-style: italic;
-    padding-top: 10dvh; 
+    padding-top: 10dvh;
+    background: rgba(0, 0, 0, 0.421);
 }
 
 .para{
@@ -64,6 +80,7 @@ body {
     font-size: x-large;
     font-style: italic;
     padding: 10dvh; 
+    background: rgba(0, 0, 0, 0.421);
 }
 
 .pics{
@@ -106,6 +123,7 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
     top: 0;
@@ -114,10 +132,13 @@ body {
     position: fixed;
     width: 100%;
     background-color: none;
-
  /* Slide setup */
     transform: translateY(-58%);
     transition: transform 0.5s ease;
+}
+
+#topbar div{
+    gap: 6dvw;
 }
 
 #topbar.open {
@@ -139,11 +160,15 @@ body {
 
 
 .tb_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     padding: 5px;
     color: darkgoldenrod;
     max-height: fit-content;
-    max-width: fit-content;
+    /* width: 100%; */
+    max-width: 100%;
     font-family: mpfont;
     /* background-color: none; */
     margin: 5px;
