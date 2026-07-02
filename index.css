@@ -68,16 +68,16 @@ body {
 
 .pics{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
     color: darkgoldenrod;
     align-items: center;
     justify-content: center;
-    gap: 300px;
-    padding: 20dvh;
-    overflow-x: hidden;
-    /* max-width: 100dvw; */
+    gap: 50px;
+    padding: 5%;
+    /* overflow-x: hidden; */
+    max-width: 100dvw;
     background: rgba(0, 0, 0, 0.421);
-    max-height: fit-content;
+    max-height: 30%;
 }
 
 .pics div{
@@ -86,13 +86,20 @@ body {
     font-size: xx-large;
     align-items: center;
     justify-content: center;
-    padding: 10dvh;
-
-    overflow: hidden;
-    gap: 40px;
+    padding: 5%;
+    /* overflow: hidden; */
+    gap: 10px;
     /* max-width: 30dvh; */
     text-align: center;
     font-family: mpfont;
+}
+
+.pics img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* optional, looks nice */
 }
 
 #topbar {
