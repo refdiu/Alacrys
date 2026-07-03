@@ -140,4 +140,6 @@ body{
     object-fit: cover;
     min-height: 75%;
     max-height: 75%;
+    image-rendering: smooth;
+    image-resolution: 100dpi;
 }
